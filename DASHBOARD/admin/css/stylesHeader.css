@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  font-size: .95rem;
+}
+
+.headerCont {
+  display: flex;
+  width: 250px;
+  height: 100%;
+  background-color: #4070f4;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left:0;
+  transition: left .2s ease;
+  border: none;
+}
+
+.swipe {
+  left:-190px;
+}
+
+.navCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width:100%;
+  padding: 0 .2rem;
+  gap: 5px;
+}
+
+.navCont hr { 
+  width: 90%;
+  border: 1px solid #fff;
+}
+
+.navModalLink {
+  text-decoration: none;
+  color: #fff;
+  height: 50px;
+  width:  98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0 .7rem;
+  gap: 10px;
+  transition: background-color .3s ease;
+}
+
+.navModalLink:hover {
+  background-color: #93aae7;
+}
+
+.link-icons {
+  height: 30px;
+  width: 30px;
+}
+
+/* Change the color when the link is clicked */
+.active {
+  background-color: #333; 
+}
+
+/* profle style */
+.profCircle {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.profile__img {
+  height: auto; 
+  width: 100%;
+  border-radius: 50%;
+  border: none;
+  transition: background-color .2s ease, transform 0.2s ;
+  display: block;
+}
+
+.profile__img:hover{
+  background-color: #93aae7;
+  transform: scale(1.1);
+}
+
+/* logo img style */
+.logo-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* top-side style */
+.top-side {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap:50px;
+  padding: 0 .5rem;
+}
+
+/* span btn style */
+.spans {
+  height: 35px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  padding: 0 .2rem;
+  border-radius: 2px;
+  transition: background-color .3s ease;
+}
+
+.spans:hover{
+  background-color: #93aae7;
+}
+
+.spans span {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width: 30px;
+}
+.spans span:first-child  {
+  width: 10px;
+}
+.spans span:nth-child(2)  {
+  width: 20px;
+}
+
+
+
+/* profile Option Styles */
+
+.popup-wrapper::before {
+  content: '';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: .5;
+  backdrop-filter: blur(10px);
+}
+
+.popup-wrapper {
+  display: none;
+}
+
+.option {
+  display: block;
+}
+
+.profile-option-cont {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 185px;
+  background-color: rgb(177, 177, 43);
+  z-index: 99;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.profile-option-cont a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  gap: 5px;
+}
+.profile-option-cont a img{
+  height: 30px;
+  width: 30px;
+}
+
+.profile-option-cont a:hover {
+  text-decoration: underline;
+}
+
+.profile-option-cont hr {
+  width: 90%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
